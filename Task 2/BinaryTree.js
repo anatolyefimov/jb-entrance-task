@@ -48,7 +48,6 @@ class BinaryTree {
     }
 
 
-
     delete(value) {
 
         this.root = this._delete(this.root, value);

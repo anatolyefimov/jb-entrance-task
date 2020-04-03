@@ -30,6 +30,7 @@
         ],
         "no-trailing-spaces": "error",
         "block-spacing": "error",
-        "prefer-const": "error"
+        "prefer-const": "error",
+        "no-multiple-empty-lines": "error"
     }
 }
