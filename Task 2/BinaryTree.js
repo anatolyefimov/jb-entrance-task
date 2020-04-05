@@ -39,7 +39,8 @@ class BinaryTree {
     }
 
     getBalance(node) {
-        return node.left.height - node.right.height;
+
+        return this.getHeight(node.left) - this.getHeight(node.right);
     }
 
     insert(value) {
@@ -114,7 +115,7 @@ class BinaryTree {
             return node;
         }
         node.height = Math.max(this.getHeight(node.left), this.getHeight(node.right)) + 1;
-        const balance = node.left - node.right;
+        const balance = this.getBalance(node);
         if (balance > 1 &&  this.getBalance(node.left) >= 0)  {
             return this.rightRotate(node);
         }

@@ -1,8 +1,8 @@
 //example 2
 
-function print() {
+function myPrint() {
     console.log('this is my print !');
 }
 
-print();
-log('Example 2');
+myPrint();
+print('Example 2');

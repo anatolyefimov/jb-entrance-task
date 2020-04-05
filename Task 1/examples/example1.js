@@ -1,9 +1,9 @@
 // example 1
 
 function main() {
-   const print = "World";
-   log(print);
+   const myPrint = "World";
+   print(myPrint);
 }
 
-log("Hello");
+print("Hello");
 main();
